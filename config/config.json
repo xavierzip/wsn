@@ -1,0 +1,5 @@
+{
+	"GATEWAY_MAC": "0013A200409EAF2A",
+	"MQTT_SERVER":"mqtt://test.mosquitto.org",
+	"REPORTING_MODE":"AUTO"	
+}
