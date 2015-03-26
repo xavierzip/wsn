@@ -1,0 +1,280 @@
+###############################################################################
+#                                                                             #
+# IAR C/C++ Compiler V8.10.3.10338/W32 for 8051         25/Mar/2015  23:29:30 #
+# Copyright 2004-2011 IAR Systems AB.                                         #
+#                                                                             #
+#    Core               =  plain                                              #
+#    Code model         =  banked                                             #
+#    Data model         =  large                                              #
+#    Calling convention =  xdata reentrant                                    #
+#    Constant location  =  data_rom                                           #
+#    Dptr setup         =  1,16                                               #
+#    Source file        =  D:\Dropbox\MAO\Work\TCAM\_workspace\ZigBee\EB2530  #
+#                          Material\Ch5 Zstack\7.TempHumdDHT11\ZStack-CC2530- #
+#                          2.3.0-1.4.0\Projects\zstack\Samples\SampleApp\Sour #
+#                          ce\GAS.c                                           #
+#    Command line       =  -f "D:\Dropbox\MAO\Work\TCAM\_workspace\ZigBee\EB2 #
+#                          530 Material\Ch5 Zstack\7.TempHumdDHT11\ZStack-CC2 #
+#                          530-2.3.0-1.4.0\Projects\zstack\Samples\SampleApp\ #
+#                          CC2530DB\..\..\..\Tools\CC2530DB\f8wEndev.cfg"     #
+#                          (-DCPU32MHZ -DROOT=__near_func -DBLINK_LEDS) -f    #
+#                          "D:\Dropbox\MAO\Work\TCAM\_workspace\ZigBee\EB2530 #
+#                           Material\Ch5 Zstack\7.TempHumdDHT11\ZStack-CC2530 #
+#                          -2.3.0-1.4.0\Projects\zstack\Samples\SampleApp\CC2 #
+#                          530DB\..\..\..\Tools\CC2530DB\f8wConfig.cfg"       #
+#                          (-DSECURE=0 -DZG_SECURE_DYNAMIC=0 -DREFLECTOR      #
+#                          -DDEFAULT_CHANLIST=0x00000800                      #
+#                          -DZDAPP_CONFIG_PAN_ID=0xFFFF                       #
+#                          -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MA #
+#                          SK=0x007F -DBEACON_REQUEST_DELAY=100               #
+#                          -DBEACON_REQ_DELAY_MASK=0x00FF                     #
+#                          -DROUTE_EXPIRY_TIME=30 -DAPSC_ACK_WAIT_DURATION_PO #
+#                          LLED=3000 -DNWK_INDIRECT_MSG_TIMEOUT=7             #
+#                          -DMAX_RREQ_ENTRIES=8 -DAPSC_MAX_FRAME_RETRIES=3    #
+#                          -DNWK_MAX_DATA_RETRIES=2                           #
+#                          -DMAX_POLL_FAILURE_RETRIES=2 -DMAX_BCAST=9         #
+#                          -DAPS_MAX_GROUPS=16 -DMAX_RTG_ENTRIES=40           #
+#                          -DNWK_MAX_BINDING_ENTRIES=4                        #
+#                          -DMAX_BINDING_CLUSTER_IDS=4 "-DDEFAULT_KEY={0x01,  #
+#                          0x03, 0x05, 0x07, 0x09, 0x0B, 0x0D, 0x0F, 0x00,    #
+#                          0x02, 0x04, 0x06, 0x08, 0x0A, 0x0C, 0x0D}"         #
+#                          -DMAC_MAX_FRAME_SIZE=116 "-DCONST=const __code"    #
+#                          -DGENERIC=__generic -DRFD_RCVC_ALWAYS_ON=FALSE     #
+#                          -DPOLL_RATE=1000 -DQUEUED_POLL_RATE=100            #
+#                          -DRESPONSE_POLL_RATE=100) -DREJOIN_POLL_RATE=440   #
+#                          "D:\Dropbox\MAO\Work\TCAM\_workspace\ZigBee\EB2530 #
+#                           Material\Ch5 Zstack\7.TempHumdDHT11\ZStack-CC2530 #
+#                          -2.3.0-1.4.0\Projects\zstack\Samples\SampleApp\Sou #
+#                          rce\GAS.c" -D ZIGBEEPRO -D NWK_AUTO_POLL -D        #
+#                          ZTOOL_P1 -D xMT_TASK -D xMT_SYS_FUNC -D            #
+#                          xMT_ZDO_FUNC -D LCD_SUPPORTED=DEBUG -lC            #
+#                          "D:\Dropbox\MAO\Work\TCAM\_workspace\ZigBee\EB2530 #
+#                           Material\Ch5 Zstack\7.TempHumdDHT11\ZStack-CC2530 #
+#                          -2.3.0-1.4.0\Projects\zstack\Samples\SampleApp\CC2 #
+#                          530DB\EndDeviceEB-Pro\List\" -lA                   #
+#                          "D:\Dropbox\MAO\Work\TCAM\_workspace\ZigBee\EB2530 #
+#                           Material\Ch5 Zstack\7.TempHumdDHT11\ZStack-CC2530 #
+#                          -2.3.0-1.4.0\Projects\zstack\Samples\SampleApp\CC2 #
+#                          530DB\EndDeviceEB-Pro\List\" --diag_suppress       #
+#                          Pe001,Pa010 -o "D:\Dropbox\MAO\Work\TCAM\_workspac #
+#                          e\ZigBee\EB2530 Material\Ch5                       #
+#                          Zstack\7.TempHumdDHT11\ZStack-CC2530-2.3.0-1.4.0\P #
+#                          rojects\zstack\Samples\SampleApp\CC2530DB\EndDevic #
+#                          eEB-Pro\Obj\" -e --debug --core=plain --dptr=16,1  #
+#                          --data_model=large --code_model=banked             #
+#                          --calling_convention=xdata_reentrant               #
+#                          --place_constants=data_rom --nr_virtual_regs 16    #
+#                          -I "D:\Dropbox\MAO\Work\TCAM\_workspace\ZigBee\EB2 #
+#                          530 Material\Ch5 Zstack\7.TempHumdDHT11\ZStack-CC2 #
+#                          530-2.3.0-1.4.0\Projects\zstack\Samples\SampleApp\ #
+#                          CC2530DB\" -I "D:\Dropbox\MAO\Work\TCAM\_workspace #
+#                          \ZigBee\EB2530 Material\Ch5                        #
+#                          Zstack\7.TempHumdDHT11\ZStack-CC2530-2.3.0-1.4.0\P #
+#                          rojects\zstack\Samples\SampleApp\CC2530DB\..\SOURC #
+#                          E\" -I "D:\Dropbox\MAO\Work\TCAM\_workspace\ZigBee #
+#                          \EB2530 Material\Ch5 Zstack\7.TempHumdDHT11\ZStack #
+#                          -CC2530-2.3.0-1.4.0\Projects\zstack\Samples\Sample #
+#                          App\CC2530DB\..\..\..\ZMAIN\TI2530DB\" -I          #
+#                          "D:\Dropbox\MAO\Work\TCAM\_workspace\ZigBee\EB2530 #
+#                           Material\Ch5 Zstack\7.TempHumdDHT11\ZStack-CC2530 #
+#                          -2.3.0-1.4.0\Projects\zstack\Samples\SampleApp\CC2 #
+#                          530DB\..\..\..\..\..\COMPONENTS\MT\" -I            #
+#                          "D:\Dropbox\MAO\Work\TCAM\_workspace\ZigBee\EB2530 #
+#                           Material\Ch5 Zstack\7.TempHumdDHT11\ZStack-CC2530 #
+#                          -2.3.0-1.4.0\Projects\zstack\Samples\SampleApp\CC2 #
+#                          530DB\..\..\..\..\..\COMPONENTS\HAL\INCLUDE\" -I   #
+#                          "D:\Dropbox\MAO\Work\TCAM\_workspace\ZigBee\EB2530 #
+#                           Material\Ch5 Zstack\7.TempHumdDHT11\ZStack-CC2530 #
+#                          -2.3.0-1.4.0\Projects\zstack\Samples\SampleApp\CC2 #
+#                          530DB\..\..\..\..\..\COMPONENTS\HAL\TARGET\CC2530E #
+#                          B\" -I "D:\Dropbox\MAO\Work\TCAM\_workspace\ZigBee #
+#                          \EB2530 Material\Ch5 Zstack\7.TempHumdDHT11\ZStack #
+#                          -CC2530-2.3.0-1.4.0\Projects\zstack\Samples\Sample #
+#                          App\CC2530DB\..\..\..\..\..\COMPONENTS\OSAL\MCU\CC #
+#                          SOC\" -I "D:\Dropbox\MAO\Work\TCAM\_workspace\ZigB #
+#                          ee\EB2530 Material\Ch5 Zstack\7.TempHumdDHT11\ZSta #
+#                          ck-CC2530-2.3.0-1.4.0\Projects\zstack\Samples\Samp #
+#                          leApp\CC2530DB\..\..\..\..\..\COMPONENTS\OSAL\INCL #
+#                          UDE\" -I "D:\Dropbox\MAO\Work\TCAM\_workspace\ZigB #
+#                          ee\EB2530 Material\Ch5 Zstack\7.TempHumdDHT11\ZSta #
+#                          ck-CC2530-2.3.0-1.4.0\Projects\zstack\Samples\Samp #
+#                          leApp\CC2530DB\..\..\..\..\..\COMPONENTS\STACK\AF\ #
+#                          " -I "D:\Dropbox\MAO\Work\TCAM\_workspace\ZigBee\E #
+#                          B2530 Material\Ch5 Zstack\7.TempHumdDHT11\ZStack-C #
+#                          C2530-2.3.0-1.4.0\Projects\zstack\Samples\SampleAp #
+#                          p\CC2530DB\..\..\..\..\..\COMPONENTS\STACK\NWK\"   #
+#                          -I "D:\Dropbox\MAO\Work\TCAM\_workspace\ZigBee\EB2 #
+#                          530 Material\Ch5 Zstack\7.TempHumdDHT11\ZStack-CC2 #
+#                          530-2.3.0-1.4.0\Projects\zstack\Samples\SampleApp\ #
+#                          CC2530DB\..\..\..\..\..\COMPONENTS\STACK\SEC\" -I  #
+#                          "D:\Dropbox\MAO\Work\TCAM\_workspace\ZigBee\EB2530 #
+#                           Material\Ch5 Zstack\7.TempHumdDHT11\ZStack-CC2530 #
+#                          -2.3.0-1.4.0\Projects\zstack\Samples\SampleApp\CC2 #
+#                          530DB\..\..\..\..\..\COMPONENTS\STACK\SAPI\" -I    #
+#                          "D:\Dropbox\MAO\Work\TCAM\_workspace\ZigBee\EB2530 #
+#                           Material\Ch5 Zstack\7.TempHumdDHT11\ZStack-CC2530 #
+#                          -2.3.0-1.4.0\Projects\zstack\Samples\SampleApp\CC2 #
+#                          530DB\..\..\..\..\..\COMPONENTS\STACK\SYS\" -I     #
+#                          "D:\Dropbox\MAO\Work\TCAM\_workspace\ZigBee\EB2530 #
+#                           Material\Ch5 Zstack\7.TempHumdDHT11\ZStack-CC2530 #
+#                          -2.3.0-1.4.0\Projects\zstack\Samples\SampleApp\CC2 #
+#                          530DB\..\..\..\..\..\COMPONENTS\STACK\ZDO\" -I     #
+#                          "D:\Dropbox\MAO\Work\TCAM\_workspace\ZigBee\EB2530 #
+#                           Material\Ch5 Zstack\7.TempHumdDHT11\ZStack-CC2530 #
+#                          -2.3.0-1.4.0\Projects\zstack\Samples\SampleApp\CC2 #
+#                          530DB\..\..\..\..\..\COMPONENTS\ZMAC\F8W\" -I      #
+#                          "D:\Dropbox\MAO\Work\TCAM\_workspace\ZigBee\EB2530 #
+#                           Material\Ch5 Zstack\7.TempHumdDHT11\ZStack-CC2530 #
+#                          -2.3.0-1.4.0\Projects\zstack\Samples\SampleApp\CC2 #
+#                          530DB\..\..\..\..\..\COMPONENTS\ZMAC\" -I          #
+#                          "D:\Dropbox\MAO\Work\TCAM\_workspace\ZigBee\EB2530 #
+#                           Material\Ch5 Zstack\7.TempHumdDHT11\ZStack-CC2530 #
+#                          -2.3.0-1.4.0\Projects\zstack\Samples\SampleApp\CC2 #
+#                          530DB\..\..\..\..\..\COMPONENTS\SERVICES\SADDR\"   #
+#                          -I "D:\Dropbox\MAO\Work\TCAM\_workspace\ZigBee\EB2 #
+#                          530 Material\Ch5 Zstack\7.TempHumdDHT11\ZStack-CC2 #
+#                          530-2.3.0-1.4.0\Projects\zstack\Samples\SampleApp\ #
+#                          CC2530DB\..\..\..\..\..\COMPONENTS\SERVICES\SDATA\ #
+#                          " -I "D:\Dropbox\MAO\Work\TCAM\_workspace\ZigBee\E #
+#                          B2530 Material\Ch5 Zstack\7.TempHumdDHT11\ZStack-C #
+#                          C2530-2.3.0-1.4.0\Projects\zstack\Samples\SampleAp #
+#                          p\CC2530DB\..\..\..\..\..\COMPONENTS\MAC\INCLUDE\" #
+#                           -I "D:\Dropbox\MAO\Work\TCAM\_workspace\ZigBee\EB #
+#                          2530 Material\Ch5 Zstack\7.TempHumdDHT11\ZStack-CC #
+#                          2530-2.3.0-1.4.0\Projects\zstack\Samples\SampleApp #
+#                          \CC2530DB\..\..\..\..\..\COMPONENTS\MAC\HIGH_LEVEL #
+#                          \" -I "D:\Dropbox\MAO\Work\TCAM\_workspace\ZigBee\ #
+#                          EB2530 Material\Ch5 Zstack\7.TempHumdDHT11\ZStack- #
+#                          CC2530-2.3.0-1.4.0\Projects\zstack\Samples\SampleA #
+#                          pp\CC2530DB\..\..\..\..\..\COMPONENTS\MAC\LOW_LEVE #
+#                          L\srf04\" -I "D:\Dropbox\MAO\Work\TCAM\_workspace\ #
+#                          ZigBee\EB2530 Material\Ch5                         #
+#                          Zstack\7.TempHumdDHT11\ZStack-CC2530-2.3.0-1.4.0\P #
+#                          rojects\zstack\Samples\SampleApp\CC2530DB\..\..\.. #
+#                          \..\..\COMPONENTS\MAC\LOW_LEVEL\srf04\SINGLE_CHIP\ #
+#                          " -Ohz --require_prototypes                        #
+#    List file          =  D:\Dropbox\MAO\Work\TCAM\_workspace\ZigBee\EB2530  #
+#                          Material\Ch5 Zstack\7.TempHumdDHT11\ZStack-CC2530- #
+#                          2.3.0-1.4.0\Projects\zstack\Samples\SampleApp\CC25 #
+#                          30DB\EndDeviceEB-Pro\List\GAS.lst                  #
+#    Object file        =  D:\Dropbox\MAO\Work\TCAM\_workspace\ZigBee\EB2530  #
+#                          Material\Ch5 Zstack\7.TempHumdDHT11\ZStack-CC2530- #
+#                          2.3.0-1.4.0\Projects\zstack\Samples\SampleApp\CC25 #
+#                          30DB\EndDeviceEB-Pro\Obj\GAS.r51                   #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+D:\Dropbox\MAO\Work\TCAM\_workspace\ZigBee\EB2530 Material\Ch5 Zstack\7.TempHumdDHT11\ZStack-CC2530-2.3.0-1.4.0\Projects\zstack\Samples\SampleApp\Source\GAS.c
+      1          #include <ioCC2530.h>
+
+   \                                 In  segment SFR_AN, at 0xb4
+   \   unsigned char volatile __sfr ADCCON1
+   \                     ADCCON1:
+   \   000000                DS 1
+
+   \                                 In  segment SFR_AN, at 0xb6
+   \   unsigned char volatile __sfr ADCCON3
+   \                     ADCCON3:
+   \   000000                DS 1
+
+   \                                 In  segment SFR_AN, at 0xba
+   \   unsigned char volatile __sfr ADCL
+   \                     ADCL:
+   \   000000                DS 1
+
+   \                                 In  segment SFR_AN, at 0xbb
+   \   unsigned char volatile __sfr ADCH
+   \                     ADCH:
+   \   000000                DS 1
+
+   \                                 In  segment SFR_AN, at 0xf2
+   \   unsigned char volatile __sfr ADCCFG
+   \                     ADCCFG:
+   \   000000                DS 1
+      2          #include "OnBoard.h"
+      3          
+      4          uint16 ReadGasData( void );
+      5          
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+      6          uint16 ReadGasData( void )
+   \                     ReadGasData:
+      7          {
+   \   000000                ; Saved register size: 0
+   \   000000                ; Auto size: 0
+      8            uint16 reading = 0;
+      9            
+     10            /* Enable channel */
+     11            ADCCFG |= 0x40;
+   \   000000   43F240       ORL     0xf2,#0x40
+     12            
+     13            /* writing to this register starts the extra conversion */
+     14            ADCCON3 = 0x86;// 0x87;
+   \   000003   75B686       MOV     0xb6,#-0x7a
+     15            
+     16            /* Wait for the conversion to be done */
+     17            while (!(ADCCON1 & 0x80));
+   \                     ??ReadGasData_0:
+   \   000006   E5B4         MOV     A,0xb4
+   \   000008   A2E7         MOV     C,0xE0 /* A   */.7
+   \   00000A   50FA         JNC     ??ReadGasData_0
+     18            
+     19            /* Disable channel after done conversion */
+     20            ADCCFG &= (0x80 ^ 0xFF); //??????1010^1111=0101(???)
+   \   00000C   53F27F       ANL     0xf2,#0x7f
+     21            
+     22            /* Read the result */
+     23            reading = ADCL;
+   \   00000F   E5BA         MOV     A,0xba
+     24            reading |= (int16) (ADCH << 8); 
+     25            
+     26            reading >>= 8;
+     27            
+     28            return (reading);
+   \   000011   E5BB         MOV     A,0xbb
+   \   000013   FA           MOV     R2,A
+   \   000014   E4           CLR     A
+   \   000015   FB           MOV     R3,A
+   \   000016   02....       LJMP    ?BRET
+   \   000019                REQUIRE ADCCFG
+   \   000019                REQUIRE ADCCON3
+   \   000019                REQUIRE ADCCON1
+   \   000019                REQUIRE ADCL
+   \   000019                REQUIRE ADCH
+     29          }
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??ReadGasData?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    ReadGasData
+
+   Maximum stack usage in bytes:
+
+     Function    ISTACK PSTACK XSTACK
+     --------    ------ ------ ------
+     ReadGasData     0      0      0
+
+
+   Segment part sizes:
+
+     Function/Label      Bytes
+     --------------      -----
+     ADCCON1                1
+     ADCCON3                1
+     ADCL                   1
+     ADCH                   1
+     ADCCFG                 1
+     ReadGasData           25
+     ??ReadGasData?relay    6
+
+ 
+ 25 bytes in segment BANKED_CODE
+  6 bytes in segment BANK_RELAYS
+  5 bytes in segment SFR_AN
+ 
+ 31 bytes of CODE memory
+  0 bytes of DATA memory (+ 5 bytes shared)
+
+Errors: none
+Warnings: none
