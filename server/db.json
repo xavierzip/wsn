@@ -1,0 +1,14 @@
+{
+    "devices":[
+        {
+            "Drink" : "Beer",
+            "Taste" : "Awesome"
+        },
+        {
+            "Drink" : "Vodka",
+            "Taste" : "Bland",
+            "Rating" : "8"
+        }      
+    ]
+
+}
