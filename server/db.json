@@ -23,18 +23,21 @@
       },
       "nodelist": {
         "header": [
+            "ID",
             "GATEWAY",
           "MAC",
           "UPDATED"
         ],
         "data": [
           {
-            "GATEWAY":"1",
+            "ID":"1",
+            "GW ID":"1",
             "MAC": "0013A200409EAF2A",
             "UPDATED": "2015-04-03 10:00:00"
           },
           {
-            "GATEWAY":"1",
+            "ID":"2",
+            "GW ID":"1",
             "MAC": "0013A200409EAF2A",
             "UPDATED": "2015-04-03 10:00:00"
           }
