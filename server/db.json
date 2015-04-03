@@ -49,6 +49,7 @@
     {
       "id": 1,
       "MAC":"0123456701234567",
+      "Location":"E4 03-06",
       "Temperature":26,
       "Humidity":52,
       "dark":false,
@@ -57,6 +58,7 @@
     {
       "id": 2,
       "MAC":"0123456701234567",
+      "Location":"LT27",
       "Temperature":26,
       "Humidity":52,
       "dark":false,
@@ -65,6 +67,7 @@
     {
       "id": 3,
       "MAC":"0123456701234567",
+      "Location":"Scince Canteen",
       "Temperature":26,
       "Humidity":52,
       "dark":false,
@@ -73,6 +76,7 @@
     {
       "id": 4,
       "MAC":"0123456701234567",
+      "Location":"LT6",
       "Temperature":26,
       "Humidity":52,
       "dark":false,
