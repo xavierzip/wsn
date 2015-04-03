@@ -1,29 +1,23 @@
 {
-    "devices":[
-        {
-            "id":1,
-            "content":{
-                
-                "header": [
-                    "ID",
-                    "MAC",
-                    "UPDATED"
-                ],
-                "data": [
-                    {
-                        "ID" : "1",
-                        "MAC" : "0013A200409EAf2A"
-                        "UPDATED" "2015-04-03 10:00:00"
-                    },
-                    {
-                        "ID" : "2",
-                        "MAC" : "0013A200409EAf2A",
-                        "UPDATED" : "2015-04-03 10:00:00"
-                    }           
-                ]
-
-            }
-        }
-    ]
-
+  "devices": [
+    {
+      "id": 1,
+      "content": {
+        "header": [
+          "MAC",
+          "UPDATED"
+        ],
+        "data": [
+          {
+            "MAC": "0013A200409EAF2A",
+            "UPDATED": "2015-04-03 10:00:00"
+          },
+          {
+            "MAC": "0013A200409EAF2A",
+            "UPDATED": "2015-04-03 10:00:00"
+          }
+        ]
+      }
+    }
+  ]
 }
