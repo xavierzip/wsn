@@ -1,0 +1,36 @@
+{
+  "sensors": [
+    {
+      "id": 1,
+      "MAC":"0123456701234567",
+      "Temperature":26,
+      "Humidity":52,
+      "dark":false,
+      "occupied":true
+    },
+    {
+      "id": 2,
+      "MAC":"0123456701234567",
+      "Temperature":26,
+      "Humidity":52,
+      "dark":false,
+      "occupied":true
+    },
+    {
+      "id": 3,
+      "MAC":"0123456701234567",
+      "Temperature":26,
+      "Humidity":52,
+      "dark":false,
+      "occupied":true
+    },
+    {
+      "id": 4,
+      "MAC":"0123456701234567",
+      "Temperature":26,
+      "Humidity":52,
+      "dark":false,
+      "occupied":true
+    }
+  ]
+}
