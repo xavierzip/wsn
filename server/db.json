@@ -1,14 +1,28 @@
 {
     "devices":[
         {
-            "Drink" : "Beer",
-            "Taste" : "Awesome"
-        },
-        {
-            "Drink" : "Vodka",
-            "Taste" : "Bland",
-            "Rating" : "8"
-        }      
+            "id":1,
+            "content":{
+                
+                "header": [
+                    "Drink",
+                    "Taste",
+                    "Rating"
+                ],
+                "data": [
+                    {
+                        "Drink" : "Beer",
+                        "Taste" : "Awesome"
+                    },
+                    {
+                        "Drink" : "Vodka",
+                        "Taste" : "Bland",
+                        "Rating" : "8"
+                    }           
+                ]
+
+            }
+        }
     ]
 
 }
