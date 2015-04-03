@@ -5,19 +5,20 @@
             "content":{
                 
                 "header": [
-                    "Drink",
-                    "Taste",
-                    "Rating"
+                    "ID",
+                    "MAC",
+                    "UPDATED"
                 ],
                 "data": [
                     {
-                        "Drink" : "Beer",
-                        "Taste" : "Awesome"
+                        "ID" : "1",
+                        "MAC" : "0013A200409EAf2A"
+                        "UPDATED" "2015-04-03 10:00:00"
                     },
                     {
-                        "Drink" : "Vodka",
-                        "Taste" : "Bland",
-                        "Rating" : "8"
+                        "ID" : "2",
+                        "MAC" : "0013A200409EAf2A",
+                        "UPDATED" : "2015-04-03 10:00:00"
                     }           
                 ]
 
